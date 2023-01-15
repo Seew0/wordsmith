@@ -1,0 +1,17 @@
+version: '1'
+
+services:
+  db:
+    build: db
+    image: db
+  
+  words:
+    build: words
+    image: words
+  
+
+  web:
+    build: web
+    image: web
+    ports:
+      - "8080:80"
